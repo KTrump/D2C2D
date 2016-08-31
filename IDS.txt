@@ -1,0 +1,8 @@
+Subscription: 95ec29e1-405b-4df4-8d1a-8309f371f550
+ResourceGroup: kt-resource-group
+AzureLocation: East US
+Prefix: kt
+Suffix: dev
+Configuration: release
+
+kirbytrump@smartneighborhood.net

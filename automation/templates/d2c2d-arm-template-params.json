@@ -1,0 +1,30 @@
+{
+    "": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "azureLocation": {
+          "value": "East US"
+        },
+        "storageAccountName": {
+          "value": "ktstoragedev"
+        },
+        "storageAccountType": {
+          "value": "Standard_LRS",
+        },
+        "serviceBusNamespace": {
+          "value": "ktsbnsdevda55f"
+        },
+        "serviceBusMessageQueue": {
+          "value": "messagedrop"
+        },
+        "serviceBusAlarmQueue": {
+          "value": "alarms"
+        },
+        "databaseAccount": {
+          "value": "ktdocdbdev"
+        },
+        "iotHubName": {
+          "value": "ktiothubdev"
+        }
+    }
+}

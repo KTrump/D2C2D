@@ -1,0 +1,10 @@
+{
+    "parameterValues": {
+        "azureLocation": "East US",
+        "appSiteName": "ktProvisionAPIdev",
+        "appServicePlan": "ProvisionM_SP",
+        "appServicePlanSku": "Standard",
+        "appServicePlanSkuSize": "0",
+        "msdeployPackageUri":""
+    }
+}
