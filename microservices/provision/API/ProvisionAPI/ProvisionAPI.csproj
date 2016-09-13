@@ -48,12 +48,12 @@
       <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="IProvision, Version = 1.0.6087.28752, Culture = neutral, processorArchitecture = MSIL">
-      <HintPath>..\packages\IProvision.1.0.6087.28752\lib\net461\IProvision.dll</HintPath>
+    <Reference Include="IProvision, Version = 1.0.6089.24430, Culture = neutral, processorArchitecture = MSIL">
+      <HintPath>..\packages\IProvision.1.0.6089.24430\lib\net461\IProvision.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="MessageModelsNet4, Version = 4.6.6087.16631, Culture = neutral, processorArchitecture = MSIL">
-      <HintPath>..\packages\MessageModelsNet4.4.6.6087.16631\lib\net461\MessageModelsNet4.dll</HintPath>
+    <Reference Include="MessageModelsNet4, Version = 4.6.6088.17711, Culture = neutral, processorArchitecture = MSIL">
+      <HintPath>..\packages\MessageModelsNet4.4.6.6088.17711\lib\net461\MessageModelsNet4.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Azure.Amqp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -81,8 +81,8 @@
       <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="ProvisionService, Version = 1.0.6087.28876, Culture = neutral, processorArchitecture = MSIL">
-      <HintPath>..\packages\ProvisionService.1.0.6087.28876\lib\net461\ProvisionService.dll</HintPath>
+    <Reference Include="ProvisionService, Version = 1.0.6089.24433, Culture = neutral, processorArchitecture = MSIL">
+      <HintPath>..\packages\ProvisionService.1.0.6089.24433\lib\net461\ProvisionService.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="StackExchange.Redis, Version=1.0.316.0, Culture=neutral, processorArchitecture=MSIL">
@@ -93,8 +93,8 @@
       <HintPath>..\packages\StackExchange.Redis.StrongName.1.0.488\lib\net45\StackExchange.Redis.StrongName.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Store, Version = 1.2.6087.16645, Culture = neutral, processorArchitecture = MSIL">
-      <HintPath>..\packages\Store.1.2.6087.16645\lib\net461\Store.dll</HintPath>
+    <Reference Include="Store, Version = 1.2.6088.17718, Culture = neutral, processorArchitecture = MSIL">
+      <HintPath>..\packages\Store.1.2.6088.17718\lib\net461\Store.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />

@@ -82,6 +82,7 @@ $Path = Split-Path -parent $path
 #######################################################################################
 
 $Error.Clear()
+Login-AzureRmAccount
 
 # Mark the start time.
 $StartTime = Get-Date
@@ -92,7 +93,7 @@ $APIName = $Prefix + "d2c2d" + $Suffix
 Select-Subscription $Subscription
 
 # Create API Management 
-New-AzureRmAPIManagement -ResourceGroupName $ResourceGroup -Location $AzureLocation -Sku Developer -Organization $Orginization -Name $APIName -AdminEmail $APIAdminEmail
+New-AzureRmAPIManagement -ResourceGroupName $ResourceGroup -Location $AzureLocation -Sku Developer -Organization $Orginization -Name $APIName -AdminEmail $APIAdminEmail -Verbose -Debug
 
 # Mark the finish time.
 $FinishTime = Get-Date

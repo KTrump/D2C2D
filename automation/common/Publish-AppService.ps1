@@ -37,7 +37,7 @@ Function Select-Subscription()
 ##########################################################################################
 # M A I N
 ##########################################################################################
-
+Import-Module AzureRM.Storage
 $Error.Clear()
 
 Set-StrictMode -Version 3
@@ -50,8 +50,8 @@ $WebDeployPackage = $Path + "\Automation\Deploy\Packages\" + $DeploymentName + "
 $containerName = 'msdeploypackages'
 $blobName = (Get-Date -Format 'ssmmhhddMMyyyy') + '-' + $ResourceGroupName + '-' + $DeploymentName + '-WebDeployPackage.zip'
 
-$storageKey = Get-AzureRmStorageAccountKey -ResourceGroupName $ResourceGroup -AccountName $storageAccountName
-$StorageContext = New-AzureStorageContext -StorageAccountName $storageAccountName -StorageAccountKey $storageKey.Key1
+#$storageKey = Get-AzureRmStorageAccountKey -ResourceGroupName $ResourceGroup -Name $storageAccountName
+$StorageContext = New-AzureStorageContext -StorageAccountName $storageAccountName -StorageAccountKey "KOOOb2n2ex5tuIC/DPjxlr3lLWPxErHAvYvayvhaPRG1Ip8+mL2VlOHOQp9jX4ZjAHnCNiJZ5JzWEDaAprRxvQ=="
 
 # Use the CurrentStorageAccount which is set by Set-AzureSubscription
 if (!(Get-AzureStorageContainer -Context $StorageContext -Name $ContainerName -ErrorAction SilentlyContinue)) 

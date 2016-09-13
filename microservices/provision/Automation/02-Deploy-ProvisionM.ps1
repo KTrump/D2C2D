@@ -104,9 +104,14 @@ Select-Subscription $Subscription
 if ($DeployData)
 {
     $connStr = $docDbConnectionString + ";Database=" + $DocDbName
+    Write-Output $connStr
     $command = $Path + "\Automation\Common\Load-DocDb.ps1"
     &$command -Path $Path -DocDbConnStr $connStr -CollectionName $DocDbCollectionName
 }
+
+# sign in
+Write-Host "Logging in...";
+Login-AzureRmAccount;
 
 # Package the APIs
 $command = $Path + "\microservices\provision\automation\Package-ProvisionM.ps1"

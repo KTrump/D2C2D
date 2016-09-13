@@ -6,3 +6,11 @@ Suffix: dev
 Configuration: release
 
 kirbytrump@smartneighborhood.net
+
+
+https://ktd2c2ddev.azure-api.net/tst/v1/provision
+http(s)://ktd2c2ddev.azure-api.net/tst/v1/provision 
+
+d2c2d.tst keys
+bc2177f634854d158998801c3732880e 
+2d17d3c9e915430ca8c1383da578830a 

@@ -165,6 +165,9 @@ Try
 
     $JSON | Set-Content -Path $ParamsPath
 
+    $OutputPath = $Path + "\Automation\deploy\data\registry\provision-$ResourceGroup-output.json"
+     $JSON | Set-Content -Path $ParamsPath
+
     New-AzureRmResourceGroupDeployment -ResourceGroupName $ResourceGroup -TemplateFile $TemplatePath -TemplateParameterFile $ParamsPath | ConvertTo-Json | Out-File  "$OutputPath"
 
 }

@@ -34,8 +34,8 @@
     <UseSharedCompilation>false</UseSharedCompilation>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MessageModelsNet4, Version = 4.6.6087.16631, Culture = neutral, processorArchitecture = MSIL">
-      <HintPath>..\packages\MessageModelsNet4.4.6.6087.16631\lib\net461\MessageModelsNet4.dll</HintPath>
+    <Reference Include="MessageModelsNet4, Version = 4.6.6088.17711, Culture = neutral, processorArchitecture = MSIL">
+      <HintPath>..\packages\MessageModelsNet4.4.6.6088.17711\lib\net461\MessageModelsNet4.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">

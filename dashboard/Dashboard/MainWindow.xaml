@@ -31,7 +31,7 @@
         <StackPanel Grid.Column="1" Grid.Row="0" Orientation="Vertical">
             <TextBlock Margin="10,5,10,5" TextAlignment="Center" FontSize="16">Devices</TextBlock>
             <ListBox x:Name="DeviceList" Width="750" Height="100" Margin="10,5,10,10" SelectionChanged="DeviceList_OnSelectionChanged" ></ListBox>
-            <!--<m:Map  x:Name="MyMap"  Width="750" Height="300" Mode="Road" CredentialsProvider="[YOUR-BING-MAPS-KEY-HERE]" Center="42.0,-71" ZoomLevel="12" AnimationLevel="Full"/>-->
+            <m:Map  x:Name="MyMap"  Width="750" Height="300" Mode="Road" CredentialsProvider="AtfRLX3SQAQmfI1VDW7uT_z__M7StK1sUqQ2ivuUalz8JIAl5mlYJkosCSmZaKW0" Center="42.0,-71" ZoomLevel="12" AnimationLevel="Full"/>
         </StackPanel>
 
         <StackPanel Grid.Column="0" Grid.Row="1">

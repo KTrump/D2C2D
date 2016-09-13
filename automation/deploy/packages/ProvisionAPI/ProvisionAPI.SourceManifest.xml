@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <sitemanifest>
-  <IisApp path="F:\Projects\D2C2D\Microservices\Provision\API\ProvisionAPI\obj\Debug\Package\PackageTmp" />
-  <setAcl path="F:\Projects\D2C2D\Microservices\Provision\API\ProvisionAPI\obj\Debug\Package\PackageTmp" setAclResourceType="Directory" />
-  <setAcl path="F:\Projects\D2C2D\Microservices\Provision\API\ProvisionAPI\obj\Debug\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+  <IisApp path="F:\Projects\Git-D2C2D\Microservices\Provision\API\ProvisionAPI\obj\Debug\Package\PackageTmp" />
+  <setAcl path="F:\Projects\Git-D2C2D\Microservices\Provision\API\ProvisionAPI\obj\Debug\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="F:\Projects\Git-D2C2D\Microservices\Provision\API\ProvisionAPI\obj\Debug\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
 </sitemanifest>
