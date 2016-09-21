@@ -14,11 +14,11 @@
 #    [string]$Configuration
 #)
 
-$Subscription = "95ec29e1-405b-4df4-8d1a-8309f371f550"
-$ResourceGroup = "kt-resource-group"
+$Subscription = "ce9058e1-db58-48a4-811b-f53bb3ca4fc5"
+$ResourceGroup = "kirby-test"
 $AzureLocation ="East US"
 $Prefix = "kt"
-$Suffix = "dev"
+$Suffix = "tst"
 $Configuration = "release"
 
 $Path = Split-Path -parent $PSCommandPath

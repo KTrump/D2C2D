@@ -44,7 +44,7 @@ Function Select-Subscription()
 
     Try
     {
-        Set-AzureRmContext  -SubscriptionName $Subscription -ErrorAction Stop
+        Set-AzureRmContext  -SubscriptionId $Subscription -ErrorAction Stop
     }
     Catch
     {

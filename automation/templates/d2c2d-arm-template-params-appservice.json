@@ -1,10 +1,10 @@
 {
     "parameterValues": {
         "azureLocation": "East US",
-        "appSiteName": "ktProvisionAPIdev",
+        "appSiteName": "ktProvisionAPItst",
         "appServicePlan": "ProvisionM_SP",
         "appServicePlanSku": "Standard",
         "appServicePlanSkuSize": "0",
-        "msdeployPackageUri":"https://ktstoragedev.blob.core.windows.net/msdeploypackages/42350102092016-kt-resource-group-ProvisionAPI-WebDeployPackage.zip?sv=2015-04-05&sr=b&sig=DAZtDK5SlykVaG4zjyppHR0dg9%2BBCe9IQzXgex%2Bn3Bc%3D&se=2016-09-02T18%3A35%3A43Z&sp=r"
+        "msdeployPackageUri":"https://ktstoragetst.blob.core.windows.net/msdeploypackages/34470115092016-kirby-test-ProvisionAPI-WebDeployPackage.zip?sv=2015-04-05&sr=b&sig=EWsd67YkvjhA3Ju9KCuLIGvyRYU3Kx4nUnWAwS%2F%2FKic%3D&se=2016-09-15T18%3A47%3A35Z&sp=r"
     }
 }

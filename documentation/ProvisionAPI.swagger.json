@@ -4,7 +4,7 @@
     "title": "Provision API - TST",
     "version": "1.0"
   },
-  "host": "ktProvisionAPIdev.azurewebsites.net",
+  "host": "ktprovisionapitst.azurewebsites.net",
   "basePath": "/provision",
   "schemes": [
     "https"

@@ -79,13 +79,13 @@ Function Select-Subscription()
 
     Try
     {
-        Set-AzureRmContext -SubscriptionName $Subscription
-        Write-Verbose -Message "Currently selected Azure subscription is: $Subscription."
+        Set-AzureRmContext -SubscriptionId $Subscription
+        Write-Output -Message "Currently selected Azure subscription is: $Subscription."
     }
     Catch
     {
-        Write-Verbose -Message $Error[0].Exception.Message
-        Write-Verbose -Message "Exiting due to exception: Subscription Not Selected."
+        Write-Output -Message $Error[0].Exception.Message
+        Write-Output -Message "Exiting due to exception: Subscription Not Selected."
     }
 }
 ##########################################################################################
@@ -96,6 +96,11 @@ $Error.Clear()
 
 # Mark the start time.
 $StartTime = Get-Date
+
+
+# sign in
+Write-Host "Logging in...";
+Login-AzureRmAccount -SubscriptionId $Subscription;
 
 # Select Subscription
 Select-Subscription $Subscription 
@@ -109,9 +114,6 @@ if ($DeployData)
     &$command -Path $Path -DocDbConnStr $connStr -CollectionName $DocDbCollectionName
 }
 
-# sign in
-Write-Host "Logging in...";
-Login-AzureRmAccount;
 
 # Package the APIs
 $command = $Path + "\microservices\provision\automation\Package-ProvisionM.ps1"

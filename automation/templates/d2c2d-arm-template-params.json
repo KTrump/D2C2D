@@ -6,13 +6,13 @@
           "value": "East US"
         },
         "storageAccountName": {
-          "value": "ktstoragedev"
+          "value": "ktstoragetst"
         },
         "storageAccountType": {
           "value": "Standard_LRS",
         },
         "serviceBusNamespace": {
-          "value": "ktsbnsdevda55f"
+          "value": "ktsbnststdda84"
         },
         "serviceBusMessageQueue": {
           "value": "messagedrop"
@@ -21,10 +21,10 @@
           "value": "alarms"
         },
         "databaseAccount": {
-          "value": "ktdocdbdev"
+          "value": "ktdocdbtst"
         },
         "iotHubName": {
-          "value": "ktiothubdev"
+          "value": "ktiothubtst"
         }
     }
 }

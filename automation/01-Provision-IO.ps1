@@ -82,7 +82,7 @@ $ErrorActionPreference = "Stop"
 
 # sign in
 Write-Host "Logging in...";
-Login-AzureRmAccount;
+Login-AzureRmAccount  -SubscriptionId $Subscription;
 
 # select subscription
 Set-AzureRmContext -SubscriptionId $Subscription;
@@ -163,12 +163,14 @@ Try
     $TemplatePath = $Path + "\Automation\Templates\d2c2d-arm-template.json"
     $OutputPath = $Path + "\Automation\provision-$ResourceGroup-output.json"
 
-    $JSON | Set-Content -Path $ParamsPath
+    $JSON | Set-Content -Path $ParamsPath  
+	$JSON | Set-Content -Path $OutputPath  
 
     $OutputPath = $Path + "\Automation\deploy\data\registry\provision-$ResourceGroup-output.json"
-     $JSON | Set-Content -Path $ParamsPath
+    $JSON | Set-Content -Path $ParamsPath
+	$JSON | Set-Content -Path $OutputPath  
 
-    New-AzureRmResourceGroupDeployment -ResourceGroupName $ResourceGroup -TemplateFile $TemplatePath -TemplateParameterFile $ParamsPath | ConvertTo-Json | Out-File  "$OutputPath"
+    New-AzureRmResourceGroupDeployment -ResourceGroupName $ResourceGroup -TemplateFile $TemplatePath -TemplateParameterFile $ParamsPath -Debug -Verbose| ConvertTo-Json | Out-File  "$OutputPath"
 
 }
 Catch

@@ -62,7 +62,7 @@ Function Select-Subscription()
 
     Try
     {
-        Set-AzureRmContext  -SubscriptionName $Subscription -ErrorAction Stop
+        Set-AzureRmContext  -SubscriptionId $Subscription -ErrorAction Stop
     }
     Catch
     {
@@ -82,7 +82,7 @@ $Path = Split-Path -parent $path
 #######################################################################################
 
 $Error.Clear()
-Login-AzureRmAccount
+Login-AzureRmAccount -SubscriptionId $Subscription
 
 # Mark the start time.
 $StartTime = Get-Date

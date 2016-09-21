@@ -13,4 +13,4 @@ param
     $Properties
 )
 
-New-AzureRmResource -Location $AzureLocation -PropertyObject $Properties -ResourceGroupName $ResourceGroupName -ResourceType Microsoft.Web/sites/config -ResourceName "$sitename/$settings" -ApiVersion 2015-08-01 -Force
+New-AzureRmResource -Location $AzureLocation -PropertyObject $Properties -ResourceGroupName $ResourceGroupName -ResourceType Microsoft.Web/sites/config -ResourceName "$sitename/$settings" -ApiVersion 2015-08-01 -Force -Verbose -Debug

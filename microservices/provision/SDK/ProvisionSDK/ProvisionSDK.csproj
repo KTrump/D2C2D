@@ -34,12 +34,12 @@
     <UseSharedCompilation>false</UseSharedCompilation>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="IProvision, Version = 1.0.6089.24430, Culture = neutral, processorArchitecture = MSIL">
-      <HintPath>..\packages\IProvision.1.0.6089.24430\lib\net461\IProvision.dll</HintPath>
+    <Reference Include="IProvision, Version = 1.0.6102.24779, Culture = neutral, processorArchitecture = MSIL">
+      <HintPath>..\packages\IProvision.1.0.6102.24779\lib\net461\IProvision.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="MessageModelsNet4, Version = 4.6.6088.17711, Culture = neutral, processorArchitecture = MSIL">
-      <HintPath>..\packages\MessageModelsNet4.4.6.6088.17711\lib\net461\MessageModelsNet4.dll</HintPath>
+    <Reference Include="MessageModelsNet4, Version = 4.6.6094.26707, Culture = neutral, processorArchitecture = MSIL">
+      <HintPath>..\packages\MessageModelsNet4.4.6.6094.26707\lib\net461\MessageModelsNet4.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">

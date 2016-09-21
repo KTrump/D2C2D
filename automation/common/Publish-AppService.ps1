@@ -25,8 +25,8 @@ Function Select-Subscription()
 
     Try
     {
-        Set-AzureRmContext  -SubscriptionName $Subscription -ErrorAction Stop
-        set-azuresubscription -SubscriptionName $Subscription -CurrentStorageAccountName $DefaultStorage
+        Set-AzureRmContext  -SubscriptionId $Subscription -ErrorAction Stop
+        set-azuresubscription -SubscriptionId $Subscription -CurrentStorageAccountName $DefaultStorage
     }
     Catch
     {
@@ -51,7 +51,7 @@ $containerName = 'msdeploypackages'
 $blobName = (Get-Date -Format 'ssmmhhddMMyyyy') + '-' + $ResourceGroupName + '-' + $DeploymentName + '-WebDeployPackage.zip'
 
 #$storageKey = Get-AzureRmStorageAccountKey -ResourceGroupName $ResourceGroup -Name $storageAccountName
-$StorageContext = New-AzureStorageContext -StorageAccountName $storageAccountName -StorageAccountKey "KOOOb2n2ex5tuIC/DPjxlr3lLWPxErHAvYvayvhaPRG1Ip8+mL2VlOHOQp9jX4ZjAHnCNiJZ5JzWEDaAprRxvQ=="
+$StorageContext = New-AzureStorageContext -StorageAccountName $storageAccountName -StorageAccountKey "HnpQCH/LGCunvlMy9UQBwAkIfzPgXUJ9DCUaax1HSoo4Ccw8JWu41cp0Fqb5VIhxj5MmPwkmsbRQgdSocHHQ3w=="
 
 # Use the CurrentStorageAccount which is set by Set-AzureSubscription
 if (!(Get-AzureStorageContainer -Context $StorageContext -Name $ContainerName -ErrorAction SilentlyContinue)) 
@@ -88,4 +88,4 @@ $jsonContent.parameterValues | Get-Member -Type NoteProperty | ForEach-Object {
 }
 
 # Create a new resource group (if it doesn't already exist) using our template file and template parameters
-New-AzureRmResourceGroupDeployment -ResourceGroupName $ResourceGroupName -TemplateFile $TemplateFile -TemplateParameterObject $parameters -Force
+New-AzureRmResourceGroupDeployment -ResourceGroupName $ResourceGroupName -TemplateFile $TemplateFile -TemplateParameterObject $parameters -Force -Verbose -Debug
